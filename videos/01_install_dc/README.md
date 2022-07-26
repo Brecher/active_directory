@@ -11,3 +11,13 @@
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 ```
 
+```
+Get-NetIPAddress
+```
+
+# Joining workstation to the domain
+
+
+```
+AddComputer -Domainname COVEN.local -Credential COVEN\Admnistrator -Force -Restart
+```
